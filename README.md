@@ -1,3 +1,30 @@
+
+orca-local.yaml
+
+
+```spinnaker:
+  extensibility:
+    plugins:
+      Armory.ObservabilityPlugin:
+        enabled: true
+        version: 1.0.9
+        config:
+          metrics:
+            prometheus:
+              enabled: true
+    repositories:
+      opsmx-repo:
+        url: https://raw.githubusercontent.com/OpsMx/spinnakerPluginRepository/refs/heads/wu-pipeline-policy-validate/plugins.json
+
+management:
+  endpoints:
+    web:
+      base-path: /
+      exposure:
+        include: health,info,aop-prometheus
+```
+
+
 This is an opsmx plugin repository that references all the plugins.
 
 This custom stage plugin involves 2 microservices.
