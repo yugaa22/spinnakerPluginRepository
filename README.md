@@ -2,7 +2,8 @@
 orca-local.yaml
 
 
-```spinnaker:
+```
+spinnaker:
   extensibility:
     plugins:
       Armory.ObservabilityPlugin:
